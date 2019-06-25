@@ -9,8 +9,8 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                sh 'docker-compose push'
-            }
+                sh 'docker tag auctiondb-auctionapp-rest_master_app ncrmns/auction'
+                sh 'docker push ncrmns/auction'
         }
     }
 }
