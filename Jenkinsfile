@@ -13,4 +13,5 @@ pipeline {
                 sh 'docker push ncrmns/auction'
         }
     }
+    }
 }
