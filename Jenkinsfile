@@ -7,11 +7,13 @@ pipeline {
                 sh 'docker-compose build'
             }
         }
+        stage('Test'){
+            steps{
+            }
+        }
         stage('Deploy'){
             steps{
-                sh 'docker tag auctiondb-auctionapp-rest_master_app ncrmns/auction'
-                sh 'docker push ncrmns/auction'
+            }
         }
-    }
     }
 }
