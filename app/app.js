@@ -84,4 +84,4 @@ function updateDbWithBid(id, nameandbid) {
   });
 }
 
-module.exports = app;
+module.exports = {app, conn};
