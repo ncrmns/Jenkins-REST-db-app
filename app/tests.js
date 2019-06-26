@@ -9,7 +9,7 @@ test('get all endpoint', (t) => {
     .get('/api/items')
     .expect('Content-type', /json/)
     .end((err, res) => {
-      const expected = { errno: 'ENOTFOUND', code: 'ENOTFOUND', syscall: 'getaddrinfo', hostname: 'db', host: 'db', port: 3306, fatal: true };
+      const expected = { message: 'getaddrinfo ENOTFOUND db db:3306', errno: 'ENOTFOUND', code: 'ENOTFOUND', syscall: 'getaddrinfo', hostname: 'db', host: 'db', port: 3306, fatal: true };
       const actual = res.body;
 
       t.error(err, 'error');
