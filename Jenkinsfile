@@ -9,8 +9,8 @@ pipeline {
         }
         stage('Test'){
             steps{
-                echo 'Test'
-                echo 'Test'
+                sh 'cd app && npm install'
+                sh 'node tests.js'
             }
         }
         stage('Deploy'){
