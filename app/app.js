@@ -83,3 +83,5 @@ function updateDbWithBid(id, nameandbid) {
       });
   });
 }
+
+module.exports = app;
