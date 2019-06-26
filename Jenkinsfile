@@ -11,6 +11,7 @@ pipeline {
             steps{
                 echo 'Test'
                 echo 'Test'
+                sadfasdhgf
             }
         }
         stage('Deploy'){
