@@ -10,7 +10,7 @@ pipeline {
         stage('Test'){
             steps{
                 sh 'cd app && npm install'
-                sh 'node tests.js'
+                sh 'cd app && node tests.js'
             }
         }
         stage('Deploy'){
