@@ -12,6 +12,7 @@ pipeline {
                 sh 'cd app && npm install'
                 sh 'cd app && node tests.js'
                 echo 'Test complete'
+								fdsajknfdskjlfndsakjnfadsjkn
             }
         }
         stage('Deploy'){
